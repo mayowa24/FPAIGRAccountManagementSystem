@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="538.0" style="-fx-background-color: #009688;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.omc.account.ViewrecordController">
+   <top>
+      <Label text="ACCOUNT INFORMATION" textFill="#f5f5f5" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="date" editable="false" layoutX="18.0" layoutY="23.0" prefHeight="38.0" prefWidth="210.0" promptText="SELECT DATE" />
+            <JFXButton layoutX="303.0" layoutY="21.0" onAction="#viewRecord" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: #009688;" text="VIEW RECORD" textFill="#fffefe" />
+            <TableView fx:id="table" layoutX="14.0" layoutY="84.0" prefHeight="242.0" prefWidth="508.0">
+              <columns>
+                <TableColumn fx:id="description" prefWidth="150.0" text="Description" />
+                <TableColumn fx:id="quantity" prefWidth="112.0" text="Quantity" />
+                  <TableColumn fx:id="rate" prefWidth="108.0" text="Rate" />
+                  <TableColumn fx:id="amount" prefWidth="137.0" text="Amount" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

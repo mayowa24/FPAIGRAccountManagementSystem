@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="310.0" prefWidth="504.0" style="-fx-background-color: #bdf2eb;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.omc.login.LoginPageController">
+   <children>
+      <JFXTextField fx:id="txtUsername" labelFloat="true" layoutX="31.0" layoutY="53.0" prefHeight="36.0" prefWidth="276.0" promptText="Username" unFocusColor="#544d4d">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="31.0" layoutY="123.0" prefHeight="25.0" prefWidth="276.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="48.0" layoutY="181.0" onAction="#login" prefHeight="51.0" prefWidth="220.0" text="Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="105.0" layoutY="288.0" text="Developed by Kokumo Ayonitemi @ 2018" />
+      <JFXButton layoutX="375.0" layoutY="255.0" onAction="#Exit" prefHeight="25.0" prefWidth="70.0" text="Exit" />
+      <ImageView fitHeight="171.0" fitWidth="183.0" layoutX="319.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/key.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

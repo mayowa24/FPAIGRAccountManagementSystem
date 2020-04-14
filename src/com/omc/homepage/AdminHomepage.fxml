@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #eee6ee;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.omc.homepage.AdminHomepageController">
+   <top>
+      <MenuBar style="-fx-background-color: #009688;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="mLogout" mnemonicParsing="false" onAction="#Logout" text="Logout" />
+              <MenuItem fx:id="mExit" mnemonicParsing="false" onAction="#Exit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Manage User">
+            <items>
+                  <MenuItem fx:id="mCreate" mnemonicParsing="false" onAction="#NewUser" text="Create New User" />
+              <MenuItem fx:id="mDelete" mnemonicParsing="false" onAction="#DeleteUser" text="Delete User" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Manage Account">
+            <items>
+              <MenuItem fx:id="mRec" mnemonicParsing="false" onAction="#AddRec" text="Add New Record" />
+                  <MenuItem mnemonicParsing="false" onAction="#Deposit" text="Deposit" />
+                  <MenuItem mnemonicParsing="false" onAction="#ViewRec" text="View Record" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label text="(c) Kokumo Ayonitemi 2018 " BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
